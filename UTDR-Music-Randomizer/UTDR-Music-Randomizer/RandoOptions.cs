@@ -8,19 +8,15 @@ namespace UTDRMusicRandomizer
 {
     public class RandoOptions
     {
-        public bool SpeedrunLegal { get; }
-        public bool CyberBattle { get; }
-        public bool MultiPart { get; }
+        public bool Intros { get; }
         public bool CreditsSongs { get; }
         public bool Ambience { get; }
         public bool SFX { get; }
 
-        public RandoOptions(bool speedrunLegal, bool cyberBattle, bool multiPart,
+        public RandoOptions(bool intro,
             bool creditsSongs, bool ambience, bool sfx)
         {
-            SpeedrunLegal = speedrunLegal;
-            CyberBattle = cyberBattle;
-            MultiPart = multiPart;
+            Intros = intro;
             CreditsSongs = creditsSongs;
             Ambience = ambience;
             SFX = sfx;

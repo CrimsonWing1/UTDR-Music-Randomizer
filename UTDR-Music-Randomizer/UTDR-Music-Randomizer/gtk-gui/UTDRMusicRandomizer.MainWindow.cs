@@ -11,11 +11,7 @@ namespace UTDRMusicRandomizer
 
 		private global::Gtk.Fixed fixedContainerOptions;
 
-		private global::Gtk.CheckButton checkbuttonSpeedrunLegal;
-
-		private global::Gtk.CheckButton checkbuttonCyberBattle;
-
-		private global::Gtk.CheckButton checkbuttonMultiPart;
+		private global::Gtk.CheckButton checkbuttonIntros;
 
 		private global::Gtk.CheckButton checkbuttonAmbience;
 
@@ -67,38 +63,19 @@ namespace UTDRMusicRandomizer
 			this.fixedContainerOptions.Name = "fixedContainerOptions";
 			this.fixedContainerOptions.HasWindow = false;
 			// Container child fixedContainerOptions.Gtk.Fixed+FixedChild
-			this.checkbuttonSpeedrunLegal = new global::Gtk.CheckButton();
-			this.checkbuttonSpeedrunLegal.CanFocus = true;
-			this.checkbuttonSpeedrunLegal.Name = "checkbuttonSpeedrunLegal";
-			this.checkbuttonSpeedrunLegal.Label = global::Mono.Unix.Catalog.GetString("Include cyber.ogg and mansion.ogg (applies to DR only)");
-			this.checkbuttonSpeedrunLegal.DrawIndicator = true;
-			this.checkbuttonSpeedrunLegal.UseUnderline = true;
-			this.fixedContainerOptions.Add(this.checkbuttonSpeedrunLegal);
-			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixedContainerOptions[this.checkbuttonSpeedrunLegal]));
-			w1.Y = 5;
-			// Container child fixedContainerOptions.Gtk.Fixed+FixedChild
-			this.checkbuttonCyberBattle = new global::Gtk.CheckButton();
-			this.checkbuttonCyberBattle.CanFocus = true;
-			this.checkbuttonCyberBattle.Name = "checkbuttonCyberBattle";
-			this.checkbuttonCyberBattle.Label = global::Mono.Unix.Catalog.GetString("Include cyber_battle_prelude.ogg (DR only, may cause softlocks)");
-			this.checkbuttonCyberBattle.DrawIndicator = true;
-			this.fixedContainerOptions.Add(this.checkbuttonCyberBattle);
-			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixedContainerOptions[this.checkbuttonCyberBattle]));
-			w2.Y = 30;
-			// Container child fixedContainerOptions.Gtk.Fixed+FixedChild
-			this.checkbuttonMultiPart = new global::Gtk.CheckButton();
-			this.checkbuttonMultiPart.CanFocus = true;
-			this.checkbuttonMultiPart.Name = "checkbuttonMultiPart";
-			this.checkbuttonMultiPart.Label = global::Mono.Unix.Catalog.GetString("Include Your Best Nightmare + Finale (UT only)");
-			this.checkbuttonMultiPart.DrawIndicator = true;
-			this.fixedContainerOptions.Add(this.checkbuttonMultiPart);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixedContainerOptions[this.checkbuttonMultiPart]));
+			this.checkbuttonIntros = new global::Gtk.CheckButton();
+			this.checkbuttonIntros.CanFocus = true;
+			this.checkbuttonIntros.Name = "checkbuttonIntros";
+			this.checkbuttonIntros.Label = global::Mono.Unix.Catalog.GetString("Include intro tracks to other tracks");
+			this.checkbuttonIntros.DrawIndicator = true;
+			this.fixedContainerOptions.Add(this.checkbuttonIntros);
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixedContainerOptions[this.checkbuttonIntros]));
 			w3.Y = 55;
 			// Container child fixedContainerOptions.Gtk.Fixed+FixedChild
 			this.checkbuttonAmbience = new global::Gtk.CheckButton();
 			this.checkbuttonAmbience.CanFocus = true;
 			this.checkbuttonAmbience.Name = "checkbuttonAmbience";
-			this.checkbuttonAmbience.Label = global::Mono.Unix.Catalog.GetString("Include ambient sounds");
+			this.checkbuttonAmbience.Label = global::Mono.Unix.Catalog.GetString("Include more ambient music");
 			this.checkbuttonAmbience.DrawIndicator = true;
 			this.checkbuttonAmbience.UseUnderline = true;
 			this.fixedContainerOptions.Add(this.checkbuttonAmbience);
@@ -108,7 +85,7 @@ namespace UTDRMusicRandomizer
 			this.checkbuttonSFX = new global::Gtk.CheckButton();
 			this.checkbuttonSFX.CanFocus = true;
 			this.checkbuttonSFX.Name = "checkbuttonSFX";
-			this.checkbuttonSFX.Label = global::Mono.Unix.Catalog.GetString("Include jingles and SFX (may have VERY BAD results)");
+			this.checkbuttonSFX.Label = global::Mono.Unix.Catalog.GetString("Include all SFX (will probably sound horrible)");
 			this.checkbuttonSFX.DrawIndicator = true;
 			this.checkbuttonSFX.UseUnderline = true;
 			this.fixedContainerOptions.Add(this.checkbuttonSFX);
@@ -159,7 +136,7 @@ namespace UTDRMusicRandomizer
 			// Container child fixedContainerMain.Gtk.Fixed+FixedChild
 			this.labelInstallPath = new global::Gtk.Label();
 			this.labelInstallPath.Name = "labelInstallPath";
-			this.labelInstallPath.LabelProp = global::Mono.Unix.Catalog.GetString("Please locate Undertale/Deltarune\'s install path:");
+			this.labelInstallPath.LabelProp = global::Mono.Unix.Catalog.GetString("Please locate Undertale Yellow's install path:");
 			this.fixedContainerMain.Add(this.labelInstallPath);
 			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixedContainerMain[this.labelInstallPath]));
 			w12.X = 5;

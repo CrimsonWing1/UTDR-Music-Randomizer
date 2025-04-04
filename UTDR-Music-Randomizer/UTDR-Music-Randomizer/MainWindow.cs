@@ -106,8 +106,8 @@ namespace UTDRMusicRandomizer
                 }
                 else { makeBackup = true; }
 
-                var options = new RandoOptions(checkbuttonSpeedrunLegal.Active, checkbuttonCyberBattle.Active,
-                    checkbuttonMultiPart.Active, checkbuttonCredits.Active, checkbuttonAmbience.Active,
+                var options = new RandoOptions(
+                    checkbuttonIntros.Active, checkbuttonCredits.Active, checkbuttonAmbience.Active, checkbuttonSFXWithMusic.Active,
                     checkbuttonSFX.Active);
 
                 var result = UTDRRandomizer.Randomize(entryInstallPath.Text, options, makeBackup);
